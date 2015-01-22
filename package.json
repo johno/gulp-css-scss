@@ -14,15 +14,17 @@
     "type": "git",
     "url": "https://github.com/johnotander/gulp-css-scss.git"
   },
-  "keywords": [
-
-  ],
+  "keywords": [],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/johnotander/gulp-css-scss/issues"
   },
   "homepage": "https://github.com/johnotander/gulp-css-scss",
-  "dependencies": {},
+  "dependencies": {
+    "css-scss": "0.0.7",
+    "gulp-util": "^3.0.2",
+    "through2": "^0.6.3"
+  },
   "devDependencies": {
     "mocha": "*"
   }
