@@ -13,14 +13,25 @@ npm install --save gulp-css-scss
 ## Usage
 
 ```javascript
-var gulpCssScss = require('gulp-css-scss');
+var gulp = require('gulp');
+var cssScss = require('gulp-css-scss');
 
-gulpCssScss();  // => true
+gulp.task('css-scss', function() {
+  return gulp.src('my-file.css')
+    .pipe(cssScss('my-class-prefix-'))
+    .pipe(gulp.dest('dist'));
+});
+
+gulp.task('default', ['css-scss']);
 ```
 
 ## License
 
 MIT
+
+## Thanks to the following
+
+* <https://github.com/jxnblk/css-scss>
 
 ## Contributing
 
