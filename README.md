@@ -2,7 +2,8 @@
 
 [![Build Status](https://secure.travis-ci.org/johnotander/gulp-css-scss.png?branch=master)](https://travis-ci.org/johnotander/gulp-css-scss)
 
-Gulp plugin for converting CSS to Scss.
+Gulp plugin for converting CSS to Scss, uses the [css-scss](https://github.com/jxnblk/css-scss)
+module created by [@jxnblk](https://twitter.com/jxnblk).
 
 ## Installation
 
