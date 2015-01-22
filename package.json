@@ -1,0 +1,29 @@
+{
+  "name": "gulp-css-scss",
+  "description": "Gulp plugin for converting CSS to Scss.",
+  "author": "John Otander",
+  "version": "0.0.1",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnotander/gulp-css-scss.git"
+  },
+  "keywords": [
+
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnotander/gulp-css-scss/issues"
+  },
+  "homepage": "https://github.com/johnotander/gulp-css-scss",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
