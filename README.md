@@ -19,8 +19,8 @@ var cssScss = require('gulp-css-scss');
 
 gulp.task('css-scss', function() {
   return gulp.src('my-file.css')
-    .pipe(cssScss('my-class-prefix-'))
-    .pipe(gulp.dest('dist'));
+    .pipe(cssScss())
+    .pipe(gulp.dest('scss'));
 });
 
 gulp.task('default', ['css-scss']);
