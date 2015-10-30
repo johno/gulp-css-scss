@@ -1,28 +1,28 @@
-'use strict';
+'use strict'
 
-var through = require('through2');
-var cssscss = require('css-scss');
-var gutil = require('gulp-util');
+var through = require('through2')
+var cssscss = require('css-scss')
+var gutil = require('gulp-util')
 
-module.exports = function gulpCssScss(options) {
-  options = options || {};
+module.exports = function gulpCssScss (options) {
+  options = options || {}
 
-  return through.obj(function(file, enc, cb) {
+  return through.obj(function (file, enc, cb) {
     if (file.isNull()) {
-      cb(null, file);
-      return;
+      cb(null, file)
+      return
     }
 
     if (!file.isBuffer()) {
-      cb();
+      cb()
     }
 
-    var src = file.contents.toString();
-    var css = cssscss(src);
+    var src = file.contents.toString()
+    var css = cssscss(src)
 
-    file.path = gutil.replaceExtension(file.path, '.scss');
+    file.path = gutil.replaceExtension(file.path, '.scss')
 
-    file.contents = new Buffer(css);
-    cb(null, file);
-  });
+    file.contents = new Buffer(css)
+    cb(null, file)
+  })
 }

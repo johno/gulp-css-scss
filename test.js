@@ -1,6 +1,6 @@
 var assert = require('assert');
 var gutil = require('gulp-util');
-var gulpCssScss = require('..');
+var gulpCssScss = require('./');
 
 describe('gulp-css-scss', function() {
 
