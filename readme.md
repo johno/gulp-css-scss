@@ -23,6 +23,44 @@ gulp.task('css-scss', () => {
 gulp.task('default', ['css-scss']);
 ```
 
+#### Input
+
+```css
+:root {
+  --red: #f00;
+}
+
+.warning {
+  color: var(--red):
+}
+
+@media (--breakpoint-small) {
+  .sm-col-6 { width: 50% }
+}
+
+@custom-media --breakpoint-small (min-width: 40em);
+
+.col-4 { calc( 4 / 12 * 100% ) }
+```
+
+#### Output
+
+```scss
+$red: #f00 !default;
+
+.warning {
+  color: $red;
+}
+
+$breakpoint-small: '(min-width: 40em)' !default;
+
+@media #{$breakpoint-small} {
+  .sm-col-6 { width: 50% }
+}
+
+.col-4 { ( 4 / 12 * 100% ) }
+```
+
 ## License
 
 MIT
