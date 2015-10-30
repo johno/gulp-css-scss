@@ -28,9 +28,9 @@
   },
   "homepage": "https://github.com/johnotander/gulp-css-scss",
   "dependencies": {
-    "css-scss": "0.0.7",
-    "gulp-util": "^3.0.2",
-    "through2": "^0.6.3"
+    "css-scss": "0.1.0",
+    "gulp-util": "^3.0.7",
+    "through2": "^2.0.0"
   },
   "devDependencies": {
     "mocha": "*"
