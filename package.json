@@ -2,7 +2,7 @@
   "name": "gulp-css-scss",
   "description": "Gulp plugin for converting CSS to Scss",
   "author": "John Otander",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "main": "index.js",
   "files": [
     "index.js"
